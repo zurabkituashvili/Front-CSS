@@ -1,0 +1,91 @@
+header {
+  padding: 20px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  background-image: url("photos/header.png");
+}
+
+.container {
+  display: flex;
+  text-align: center;
+}
+
+footer {
+  background-image: url("photos/robi.jpg");
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.aside1 {
+  padding: 16px;
+  order: 2;
+  margin: 5px;
+  width: 15%;
+  border-radius: 10px;
+  background-image: url("photos/aside1.png");
+  color: green;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.aside2 {
+  padding: 16px;
+  order: 3;
+  margin: 5px 0px 5px 5px;
+  width: 15%;
+  border-radius: 10px;
+  background-image: url("photos/aside2.png");
+  color: green;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+article {
+  background-color: slategrey;
+  padding: 30px;
+  height: 300px;
+  order: 2;
+  margin: 5px;
+  width: 70%;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  article {
+    order: 1;
+    width: 100%;
+  }
+
+  .aside {
+    width: 43%;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  .aside1 {
+    margin-right: 10px;
+  }
+  .aside2 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aside {
+    width: 100%;
+  }
+  .aside1 {
+    margin-right: 0px;
+  }
+  .aside2 {
+    margin-left: 0px;
+  }
+}
